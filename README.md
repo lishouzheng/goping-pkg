@@ -1,9 +1,9 @@
 # goping-pkg
 
-基于 [https://github.com/go-ping/ping] 修改而来
-修改记录可以参考 [https://github.com/lishouzheng/goping-pkg]
-只支持IPv4, IPv6支持在计划中
-注释与测试用例缺少
+- 基于 [https://github.com/go-ping/ping] 修改而来  
+- 修改记录可以参考 [https://github.com/lishouzheng/ping]  
+- 只支持IPv4, IPv6支持在计划中  
+- 注释与测试用例缺少  
 
 ## 适用场景
 
