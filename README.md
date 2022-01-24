@@ -20,3 +20,17 @@
 3. 使用双层校验, 对埋点UUID和回包ID进行双层校验, 优化性能
 4. 使用原子锁解决双层校验加锁频繁问题
 5. 支持Reset操作, 可以复用pingTask, 优化性能
+
+## 使用方式
+
+```golang
+    pinger := Default(NoopLogger{})
+    pp := PingIPTask{}
+    pp2 := PingIPTask{}
+    pp.New("baidu.com", 5, NoopLogger{}, pinger)
+    pp2.New("baidu.com", 5, NoopLogger{}, pinger)
+    pp.Start()
+    pp2.Start()
+    fmt.Println(pp.Rst())
+    fmt.Println(pp2.Rst())
+```
